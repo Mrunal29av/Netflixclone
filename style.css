@@ -1,4 +1,3 @@
-/* General */
 body {
   margin: 0;
   padding: 0;
@@ -116,7 +115,8 @@ body {
 .email-form input {
   background-color: transparent;
   padding: 14px;
-  width: 450px;
+  height: 60px;
+  width: 550px;
   max-width: 90%;
   font-size: 18px;
   color: white;
@@ -129,7 +129,8 @@ body {
 .email-form button {
   padding: 14px 22px;
   margin-left: 10px;
-  font-size: 18px;
+  font-size: 20px;
+  height: 90px;
   background: #e50914;
   color: white;
   font-weight: bold;
@@ -169,13 +170,11 @@ body {
 
   width: 1500px;
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
   gap: 70px;
   padding: 50px;
-  scroll-snap-type: x mandatory;
-  counter-reset: card-number;
 }
-
+/* 
 .trending-cards::-webkit-scrollbar {
   height: 8px;
 }
@@ -183,7 +182,7 @@ body {
 .trending-cards::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 4px;
-}
+} */
 
 .card {
   position: relative;
@@ -222,6 +221,13 @@ body {
 }
 
 /* Reason to join section */
+
+
+.card-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
 
 
 .card-container {
@@ -309,10 +315,6 @@ details[open] summary::after {
   content: '✕';
 }
 
-summary::-webkit-details-marker {
-  display: none;
-}
-
 details p {
   padding: 24px;
   font-size: 20px;
@@ -321,32 +323,6 @@ details p {
   background-color: #303030;
   margin: 0;
 }
-
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  summary {
-    font-size: 20px;
-    padding: 20px;
-  }
-
-  summary::after {
-    font-size: 28px;
-    right: 16px;
-  }
-
-  details p {
-    font-size: 18px;
-    padding: 20px;
-  }
-
-  .question-section h1 {
-    font-size: 36px;
-  }
-}
-
-
-
-
 
 
 
